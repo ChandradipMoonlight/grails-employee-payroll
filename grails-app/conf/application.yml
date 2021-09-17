@@ -116,6 +116,7 @@ environments:
             username: ${db_user}
             password: ${db_pass}
             url: ${db_url}
+
     test:
         dataSource:
             dbCreate: update

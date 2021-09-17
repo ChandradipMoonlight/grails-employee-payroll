@@ -1,5 +1,7 @@
 package employee.payroll.grails.app
 
+import com.bridgelabz.EmployeeController
+
 class UrlMappings {
 
     static mappings = {
@@ -9,7 +11,8 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+//        "/"(controller: EmployeeController, view:"/employee/index")
+        "/"( controller:"employee", action: "index")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
